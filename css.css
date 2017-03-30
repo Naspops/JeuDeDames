@@ -1,0 +1,23 @@
+table{
+	border: 2px solid black;
+	border-collapse: collapse;
+}
+
+td, tr{
+	border: 2px solid black;
+	height: 36px;
+	width: 36px;
+	border-collapse: collapse;
+}
+
+.black {
+	background-color: grey;
+}
+
+.white {
+	background-color: white;
+}
+
+.rouge {
+	background-color: red;
+}
