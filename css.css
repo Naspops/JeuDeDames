@@ -9,15 +9,12 @@ td, tr{
 	width: 36px;
 	border-collapse: collapse;
 }
-
-.black {
-	background-color: grey;
+.beige{
+    background-color: beige;
 }
-
-.white {
-	background-color: white;
+.marron{
+    background-color: burlywood;
 }
-
 .rouge {
 	background-color: red;
 }
