@@ -14,7 +14,7 @@ for(var i=0; i<8; i++){
 		}
 	}
 	bool=!bool;
-	tab += "</tr>";
+	tab += "</tr>"; //fin de ligne
 }
 tab += "</table>";
 document.getElementById('element').innerHTML = tab;
