@@ -3,15 +3,15 @@ var bool=true;
 
 //INIT GRILLE ET COULEUR CASE
 tab="<table>"
-for(var i=0; i<10; i++){
+for(var l=0; l<10; l++){
 	tab += "<tr>";
-	for(var j=0; j<10; j++){
+	for(var c=0; c<10; c++){
 		if(bool){
-			tab += "<td id=\"cell-c"+j+"-L"+i+"\" class=\"beige\"></td>";
+			tab += "<td id=\"C"+c+"-L"+l+"\" class=\"beige\"></td>";
 			bool=!bool;
 		}
 		else{
-			tab += "<td id=\"cell-c"+j+"-L"+i+"\" class=\"marron\"></td>";
+			tab += "<td id=\"C"+c+"-L"+l+"\" class=\"marron\"></td>";
 			bool=!bool;	
 		}	
 	}
@@ -24,38 +24,37 @@ document.getElementById('element').innerHTML = tab;
 
 
 function placement(){
-	for(var j=0; j<10; j++){
-		if(j%2==0){
-			document.getElementById('cell-c'+j+'-L0').innerHTML += "<img style=width:40px;height:40px; src='image/PION_N' id=\"img-c"+j+"-L0\">";
-			document.getElementById('cell-c'+j+'-L2').innerHTML += "<img style=width:40px;height:40px; src='image/PION_N' id=\"img-c"+j+"-L2\">";
-			document.getElementById('cell-c'+j+'-L9').innerHTML += "<img style=width:40px;height:40px; src='image/PION_B' id=\"img-c"+j+"-L9\">";
-			document.getElementById('cell-c'+j+'-L7').innerHTML += "<img style=width:40px;height:40px; src='image/PION_B' id=\"img-c"+j+"-L7\">";
+	for(var c=0; c<10; c++){
+		if(c%2==0){
+			document.getElementById('C'+c+'-L0').innerHTML += "<img style=width:40px;height:40px; src='image/PION_N' id=\"img-c"+c+"-L0\">";
+			document.getElementById('C'+c+'-L2').innerHTML += "<img style=width:40px;height:40px; src='image/PION_N' id=\"img-c"+c+"-L2\">";
+			document.getElementById('C'+c+'-L9').innerHTML += "<img style=width:40px;height:40px; src='image/PION_B' id=\"img-c"+c+"-L9\">";
+			document.getElementById('C'+c+'-L7').innerHTML += "<img style=width:40px;height:40px; src='image/PION_B' id=\"img-c"+c+"-L7\">";
 		}else{
-			document.getElementById('cell-c'+j+'-L1').innerHTML += "<img style=width:40px;height:40px; src='image/PION_N' id=\"img-c"+j+"-L1\">";
-			document.getElementById('cell-c'+j+'-L3').innerHTML += "<img style=width:40px;height:40px; src='image/PION_N' id=\"img-c"+j+"-L3\">";
-			document.getElementById('cell-c'+j+'-L8').innerHTML += "<img style=width:40px;height:40px; src='image/PION_B' id=\"img-c"+j+"-L8\">";
-			document.getElementById('cell-c'+j+'-L6').innerHTML += "<img style=width:40px;height:40px; src='image/PION_B' id=\"img-c"+j+"-L6\">";
+			document.getElementById('C'+c+'-L1').innerHTML += "<img style=width:40px;height:40px; src='image/PION_N' id=\"img-c"+c+"-L1\">";
+			document.getElementById('C'+c+'-L3').innerHTML += "<img style=width:40px;height:40px; src='image/PION_N' id=\"img-c"+c+"-L3\">";
+			document.getElementById('C'+c+'-L8').innerHTML += "<img style=width:40px;height:40px; src='image/PION_B' id=\"img-c"+c+"-L8\">";
+			document.getElementById('C'+c+'-L6').innerHTML += "<img style=width:40px;height:40px; src='image/PION_B' id=\"img-c"+c+"-L6\">";
 		}
 	}		
+}
 
-	for(var j=0; j<10; j++){
-		if(j%2==0){
-			document.getElementById('cell-c'+j+'-L3').addEventListener("mouseout", function(){document.getElementById(this.id).className = "marron"});
-			document.getElementById('cell-c'+j+'-L6').addEventListener("mouseout", function(){document.getElementById(this.id).className = "beige"});
-		}
-		else{
-			document.getElementById('cell-c'+j+'-L3').addEventListener("mouseover", function(){document.getElementById(this.id).className = "rouge"});
-			document.getElementById('cell-c'+j+'-L6').addEventListener("mouseover", function(){document.getElementById(this.id).className = "rouge"});
-			document.getElementById('cell-c'+j+'-L3').addEventListener("mouseout", function(){document.getElementById(this.id).className = "beige"});
-			document.getElementById('cell-c'+j+'-L6').addEventListener("mouseout", function(){document.getElementById(this.id).className = "marron"});
+/*
+function verifJouable(){
+	bool = true
+	for (var l=0; l<10; l++){
+		for(var c=O; c<10; c++){
+			if(bool){
+				document.getElementById('C'+c+'-L'+l).addEventListener("mouseout", function(){document.getElementById(this.id).className = "marron"});
+			}
+			else{
+				document.getElementById('C'+c+'-L'+l).addEventListener("mouseout", function(){document.getElementById(this.id).className = "beige"});
+			}
 		}
 	}
-}
 
-
-function jouer(){
-	for var(j)
 }
+*/
 
 var t1 = 60;
 $(".compteur").append("<p>"+t1+"</p>");
