@@ -24,31 +24,17 @@ document.getElementById('element').innerHTML = tab;
 
 
 function placement(){
-<<<<<<< HEAD
-	for(var j=0; j<10; j++){
-		if(j%2==0){
-			document.getElementById('cell-c'+j+'-L0').innerHTML += "<img style=width:40px;height:40px; src='image/PION_N.png' id=\"img-c"+j+"-L0\">";
-			document.getElementById('cell-c'+j+'-L2').innerHTML += "<img style=width:40px;height:40px; src='image/PION_N.png' id=\"img-c"+j+"-L2\">";
-			document.getElementById('cell-c'+j+'-L9').innerHTML += "<img style=width:40px;height:40px; src='image/PION_B.png' id=\"img-c"+j+"-L9\">";
-			document.getElementById('cell-c'+j+'-L7').innerHTML += "<img style=width:40px;height:40px; src='image/PION_B.png' id=\"img-c"+j+"-L7\">";
-		}else{
-			document.getElementById('cell-c'+j+'-L1').innerHTML += "<img style=width:40px;height:40px; src='image/PION_N.png' id=\"img-c"+j+"-L1\">";
-			document.getElementById('cell-c'+j+'-L3').innerHTML += "<img style=width:40px;height:40px; src='image/PION_N.png' id=\"img-c"+j+"-L3\">";
-			document.getElementById('cell-c'+j+'-L8').innerHTML += "<img style=width:40px;height:40px; src='image/PION_B.png' id=\"img-c"+j+"-L8\">";
-			document.getElementById('cell-c'+j+'-L6').innerHTML += "<img style=width:40px;height:40px; src='image/PION_B.png' id=\"img-c"+j+"-L6\">";
-=======
 	for(var c=0; c<10; c++){
 		if(c%2==0){
-			document.getElementById('C'+c+'-L0').innerHTML += "<img style=width:40px;height:40px; src='image/PION_N' id=\"img-c"+c+"-L0\">";
-			document.getElementById('C'+c+'-L2').innerHTML += "<img style=width:40px;height:40px; src='image/PION_N' id=\"img-c"+c+"-L2\">";
-			document.getElementById('C'+c+'-L9').innerHTML += "<img style=width:40px;height:40px; src='image/PION_B' id=\"img-c"+c+"-L9\">";
-			document.getElementById('C'+c+'-L7').innerHTML += "<img style=width:40px;height:40px; src='image/PION_B' id=\"img-c"+c+"-L7\">";
+			document.getElementById('C'+c+'-L0').innerHTML += "<img style=width:40px;height:40px; src='image/PION_N.png' id=\"img-c"+c+"-L0\">";
+			document.getElementById('C'+c+'-L2').innerHTML += "<img style=width:40px;height:40px; src='image/PION_N.png' id=\"img-c"+c+"-L2\">";
+			document.getElementById('C'+c+'-L9').innerHTML += "<img style=width:40px;height:40px; src='image/PION_B.png' id=\"img-c"+c+"-L9\">";
+			document.getElementById('C'+c+'-L7').innerHTML += "<img style=width:40px;height:40px; src='image/PION_B.png' id=\"img-c"+c+"-L7\">";
 		}else{
-			document.getElementById('C'+c+'-L1').innerHTML += "<img style=width:40px;height:40px; src='image/PION_N' id=\"img-c"+c+"-L1\">";
-			document.getElementById('C'+c+'-L3').innerHTML += "<img style=width:40px;height:40px; src='image/PION_N' id=\"img-c"+c+"-L3\">";
-			document.getElementById('C'+c+'-L8').innerHTML += "<img style=width:40px;height:40px; src='image/PION_B' id=\"img-c"+c+"-L8\">";
-			document.getElementById('C'+c+'-L6').innerHTML += "<img style=width:40px;height:40px; src='image/PION_B' id=\"img-c"+c+"-L6\">";
->>>>>>> 115b253beeed7aa1d0ac8b6241872f188a514680
+			document.getElementById('C'+c+'-L1').innerHTML += "<img style=width:40px;height:40px; src='image/PION_N.png' id=\"img-c"+c+"-L1\">";
+			document.getElementById('C'+c+'-L3').innerHTML += "<img style=width:40px;height:40px; src='image/PION_N.png' id=\"img-c"+c+"-L3\">";
+			document.getElementById('C'+c+'-L8').innerHTML += "<img style=width:40px;height:40px; src='image/PION_B.png' id=\"img-c"+c+"-L8\">";
+			document.getElementById('C'+c+'-L6').innerHTML += "<img style=width:40px;height:40px; src='image/PION_B.png' id=\"img-c"+c+"-L6\">";
 		}
 	}		
 }
@@ -67,23 +53,18 @@ function verifJouable(){
 		}
 	}
 
-<<<<<<< HEAD
 function jouer(){
 
 }
-
-
-function deplacement(){
-
-=======
->>>>>>> 115b253beeed7aa1d0ac8b6241872f188a514680
-}
 */
 
-
-
-
-
+function deplacement(){
+	for(var c=0;c<10;c++){
+		$("#C"+c+"-L"+c).on("click", function(){
+			console.log("#C"+c+"-L"+c);
+		});
+	}
+}
 
 
 var t1 = 60;
@@ -97,3 +78,8 @@ function decr(){
 $(".compteur").on("click", function(){
 	setInterval(decr, 1000);
 });
+
+
+window.onload = function(){
+	deplacement();
+};
