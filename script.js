@@ -29,15 +29,15 @@ function placement(){
 	initGrille();
 	for(var c=0; c<10; c++){
 		if(c%2==0){
-			document.getElementById('C'+c+'-L0').innerHTML += "<img style=width:40px;height:40px; src='image/PION_N' id=\"img-C"+c+"-L0\">";
-			document.getElementById('C'+c+'-L2').innerHTML += "<img style=width:40px;height:40px; src='image/PION_N' id=\"img-C"+c+"-L2\">";
-			document.getElementById('C'+c+'-L9').innerHTML += "<img style=width:40px;height:40px; src='image/PION_B' id=\"img-C"+c+"-L9\">";
-			document.getElementById('C'+c+'-L7').innerHTML += "<img style=width:40px;height:40px; src='image/PION_B' id=\"img-C"+c+"-L7\">";
+			document.getElementById('C'+c+'-L0').innerHTML += "<img style=width:40px;height:40px; src='image/PION_N.png' id=\"img-C"+c+"-L0\">";
+			document.getElementById('C'+c+'-L2').innerHTML += "<img style=width:40px;height:40px; src='image/PION_N.png' id=\"img-C"+c+"-L2\">";
+			document.getElementById('C'+c+'-L9').innerHTML += "<img style=width:40px;height:40px; src='image/PION_B.png' id=\"img-C"+c+"-L9\">";
+			document.getElementById('C'+c+'-L7').innerHTML += "<img style=width:40px;height:40px; src='image/PION_B.png' id=\"img-C"+c+"-L7\">";
 		}else{
-			document.getElementById('C'+c+'-L1').innerHTML += "<img style=width:40px;height:40px; src='image/PION_N' id=\"img-C"+c+"-L1\">";
-			document.getElementById('C'+c+'-L3').innerHTML += "<img style=width:40px;height:40px; src='image/PION_N' id=\"img-C"+c+"-L3\">";
-			document.getElementById('C'+c+'-L8').innerHTML += "<img style=width:40px;height:40px; src='image/PION_B' id=\"img-C"+c+"-L8\">";
-			document.getElementById('C'+c+'-L6').innerHTML += "<img style=width:40px;height:40px; src='image/PION_B' id=\"img-C"+c+"-L6\">";
+			document.getElementById('C'+c+'-L1').innerHTML += "<img style=width:40px;height:40px; src='image/PION_N.png' id=\"img-C"+c+"-L1\">";
+			document.getElementById('C'+c+'-L3').innerHTML += "<img style=width:40px;height:40px; src='image/PION_N.png' id=\"img-C"+c+"-L3\">";
+			document.getElementById('C'+c+'-L8').innerHTML += "<img style=width:40px;height:40px; src='image/PION_B.png' id=\"img-C"+c+"-L8\">";
+			document.getElementById('C'+c+'-L6').innerHTML += "<img style=width:40px;height:40px; src='image/PION_B.png' id=\"img-C"+c+"-L6\">";
 		}
 	}		
 }
