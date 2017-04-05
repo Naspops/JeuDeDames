@@ -79,21 +79,3 @@ function deplacement(){
 >>>>>>> 115b253beeed7aa1d0ac8b6241872f188a514680
 }
 */
-
-
-
-
-
-
-
-var t1 = 60;
-$(".compteur").append("<p>"+t1+"</p>");
-
-function decr(){
-	t1 = t1-1;
-	$(".compteur").html("<p>"+t1+"</p>");
-}
-
-$(".compteur").on("click", function(){
-	setInterval(decr, 1000);
-});
