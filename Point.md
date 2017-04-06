@@ -14,6 +14,7 @@ Les pions sont au bon endroit~~
 ~~On peut déplacer les pions~~
 ~~seulement aux endroits où c'est possible~~
 ~~On peut "prendre" un pion adverse en le "sautant"~~
+Le temps de jeu est géré~~
 
 #Plus
 ~~une vidéo du jeu est sur la page de présentation et peut se lire (préciser le navigateur avec lequel cela fonctionne~~

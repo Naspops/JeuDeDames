@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <head>
 	<meta charset="UTF-8">
-	<title>Jeu de dames</title>
+	<title>Jeu2Dames</title>
 	<link rel=stylesheet href=css.css >
 	<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
 </head>
+<h1>Jeu2Dames</h1>
 
 
-<div id=element></div>
-<button onclick="placement()">JOUER</button>
-<p class="compteur" id="cmpt1"></p>
-<p class="compteur" id="cmpt2"></p>
+<div id=element></div><br/>
+<button id=btnJouer onclick="placement()">JOUER</button>
+<p class="compteur" id="cmpt1"></p> <!-- Compteur joueur 1  -->
+<p class="compteur" id="cmpt2"></p> <!-- Compteur joueur 2  -->
 <script src=script.js ></script>
+<script src=compteur.js ></script>

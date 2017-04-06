@@ -1,4 +1,6 @@
 table{
+	text-align: center;
+	margin: auto;
 	border: 2px solid black;
 	border-collapse: collapse;
 }
@@ -17,4 +19,20 @@ td, tr{
 }
 .rouge {
 	background-color: red;
+}
+body{
+	margin-left: auto;
+	text-align: center;
+}
+h1{
+	font-family: Chalkduster, fantasy;
+	color: #3E3E3E;
+}
+#btnJouer{
+	margin-top:461px;
+	border: none;
+	font-size: 22pt;
+	border-radius: 3px;
+	background-color: #3E3E3E;
+	color: white;
 }
