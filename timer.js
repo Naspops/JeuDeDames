@@ -1,28 +1,28 @@
 var t1 = 15;
 var t2 = 15;
-$(".compteur").append("<p>"+t1+"</p>");
-
+$("#cmpt1").append("J1 : "+t1);
+$("#cmpt2").append("J2 : "+t2);
 function decr1(){
 	t1 = t1-1;
-	$("#cmpt1").html("<p>"+t1+"</p>");
+	$("#cmpt1").html("J1 : "+t1);
 	if(t1==0){
 		interval2();
 		jpp2 = 1;
 		jpp1 = undefined;
 		t1=15;
-		$("#cmpt1").html("<p>"+t1+"</p>");
+		$("#cmpt1").html("J1 : "+t1);
 	}
 }
 
 function decr2(){
 	t2 = t2-1;
-	$("#cmpt2").html("<p>"+t2+"</p>");
+	$("#cmpt2").html("J2 : "+t2);
 	if(t2==0){
 		interval1();
 		jpp1 = 1;
 		jpp2 = undefined;
 		t2=15;
-		$("#cmpt2").html("<p>"+t2+"</p>");
+		$("#cmpt2").html("J2 : "+t2);
 	}
 }
 
@@ -49,7 +49,7 @@ $("#cmpt1").on("click", function(){
 		jpp1 = 1;
 		jpp2 = undefined;
 		t2=15;
-		$("#cmpt2").html("<p>"+t2+"</p>");
+		$("#cmpt1").html("J1 : "+t1);
 	}
 });
 
@@ -59,6 +59,6 @@ $("#cmpt2").on("click", function(){
 		jpp2 = 1;
 		jpp1 = undefined;
 		t1=15;
-		$("#cmpt1").html("<p>"+t1+"</p>");
+		$("#cmpt2").html("J2 : "+t2);
 	}
 });
