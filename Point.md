@@ -1,3 +1,5 @@
+Membres du grp : Adrien Mahe, Nassime Boufim, Marc-Olivier Batonon
+
 Actuellement le projet valide : (barrer ce qui n'est pas encore implémenter et mettre à côté le % de mise en oeuvre). Pour barrer en markdown, il suffit d'ecadrer le texte par "~~"
 
 #Généralités de gestion de projet
