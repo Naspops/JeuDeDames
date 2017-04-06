@@ -62,7 +62,6 @@ function verifJouable(){
 		bool=!bool;
 	}
 }
-<<<<<<< HEAD
 
 
 $("#C1-L1").on("click", function(){
@@ -82,5 +81,3 @@ function decr(){
 $(".compteur").on("click", function(){
 	setInterval(decr, 1000);
 });
-=======
->>>>>>> d14e4cf42e9ba8fa08516250027693652002b70e
