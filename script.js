@@ -27,6 +27,9 @@ function initGrille(){
 
 function placement(){
 	initGrille();
+	$('#btnJouer').css({
+		'margin-top': '0',
+	});
 	for(var c=0; c<10; c++){
 		if(c%2==0){
 			document.getElementById('C'+c+'-L0').innerHTML += "<img style=width:40px;height:40px; src='image/PION_N.png' id=\"img-C"+c+"-L0\">";
