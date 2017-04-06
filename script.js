@@ -39,24 +39,6 @@ function placement(){
 	}		
 }
 
-/*
-function verifJouable(){
-	bool = true
-	for (var l=0; l<10; l++){
-		for(var c=O; c<10; c++){
-			if(bool){
-				document.getElementById('C'+c+'-L'+l).addEventListener("mouseout", function(){document.getElementById(this.id).className = "marron"});
-			}
-			else{
-				document.getElementById('C'+c+'-L'+l).addEventListener("mouseout", function(){document.getElementById(this.id).className = "beige"});
-			}
-		}
-	}
-
-function jouer(){
-
-}
-*/
 
 function deplacement(){
 	var p = $(".pion");
@@ -64,18 +46,3 @@ function deplacement(){
 }
 
 
-var t1 = 60;
-$(".compteur").append("<p>"+t1+"</p>");
-
-function decr(){
-	t1 = t1-1;
-	$(".compteur").html("<p>"+t1+"</p>");
-}
-
-$(".compteur").on("click", function(){
-	setInterval(decr, 1000);
-});
-
-
-window.onload = function(){
-};
