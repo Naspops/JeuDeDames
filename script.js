@@ -70,14 +70,4 @@ $("#C1-L1").on("click", function(){
 
 
 
-var t1 = 60;
-$(".compteur").append("<p>"+t1+"</p>");
 
-function decr(){
-	t1 = t1-1;
-	$(".compteur").html("<p>"+t1+"</p>");
-}
-
-$(".compteur").on("click", function(){
-	setInterval(decr, 1000);
-});
