@@ -26,15 +26,15 @@ document.getElementById('element').innerHTML = tab;
 function placement(){
 	for(var c=0; c<10; c++){
 		if(c%2==0){
-			document.getElementById('C'+c+'-L0').innerHTML += "<img style=width:40px;height:40px; src='image/PION_N.png' id=\"img-c"+c+"-L0\">";
-			document.getElementById('C'+c+'-L2').innerHTML += "<img style=width:40px;height:40px; src='image/PION_N.png' id=\"img-c"+c+"-L2\">";
-			document.getElementById('C'+c+'-L9').innerHTML += "<img style=width:40px;height:40px; src='image/PION_B.png' id=\"img-c"+c+"-L9\">";
-			document.getElementById('C'+c+'-L7').innerHTML += "<img style=width:40px;height:40px; src='image/PION_B.png' id=\"img-c"+c+"-L7\">";
+			document.getElementById('C'+c+'-L0').innerHTML += "<img  onclick='deplacement()' style=width:40px;height:40px; src='image/PION_N.png' id=\"img-c"+c+"-L0\" class=pion>";
+			document.getElementById('C'+c+'-L2').innerHTML += "<img  onclick='deplacement()' style=width:40px;height:40px; src='image/PION_N.png' id=\"img-c"+c+"-L2\" class=pion>";
+			document.getElementById('C'+c+'-L9').innerHTML += "<img  onclick='deplacement()' style=width:40px;height:40px; src='image/PION_B.png' id=\"img-c"+c+"-L9\" class=pion>";
+			document.getElementById('C'+c+'-L7').innerHTML += "<img  onclick='deplacement()' style=width:40px;height:40px; src='image/PION_B.png' id=\"img-c"+c+"-L7\" class=pion>";
 		}else{
-			document.getElementById('C'+c+'-L1').innerHTML += "<img style=width:40px;height:40px; src='image/PION_N.png' id=\"img-c"+c+"-L1\">";
-			document.getElementById('C'+c+'-L3').innerHTML += "<img style=width:40px;height:40px; src='image/PION_N.png' id=\"img-c"+c+"-L3\">";
-			document.getElementById('C'+c+'-L8').innerHTML += "<img style=width:40px;height:40px; src='image/PION_B.png' id=\"img-c"+c+"-L8\">";
-			document.getElementById('C'+c+'-L6').innerHTML += "<img style=width:40px;height:40px; src='image/PION_B.png' id=\"img-c"+c+"-L6\">";
+			document.getElementById('C'+c+'-L1').innerHTML += "<img  onclick='deplacement()' style=width:40px;height:40px; src='image/PION_N.png' id=\"img-c"+c+"-L1\" class=pion>";
+			document.getElementById('C'+c+'-L3').innerHTML += "<img  onclick='deplacement()' style=width:40px;height:40px; src='image/PION_N.png' id=\"img-c"+c+"-L3\" class=pion>";
+			document.getElementById('C'+c+'-L8').innerHTML += "<img  onclick='deplacement()' style=width:40px;height:40px; src='image/PION_B.png' id=\"img-c"+c+"-L8\" class=pion>";
+			document.getElementById('C'+c+'-L6').innerHTML += "<img  onclick='deplacement()' style=width:40px;height:40px; src='image/PION_B.png' id=\"img-c"+c+"-L6\" class=pion>";
 		}
 	}		
 }
@@ -59,11 +59,8 @@ function jouer(){
 */
 
 function deplacement(){
-	for(var c=0;c<10;c++){
-		$("#C"+c+"-L"+c).on("click", function(){
-			console.log("#C"+c+"-L"+c);
-		});
-	}
+	var p = $(".pion");
+	console.log(p.parent().attr("id"));
 }
 
 
@@ -81,5 +78,4 @@ $(".compteur").on("click", function(){
 
 
 window.onload = function(){
-	deplacement();
 };
